@@ -215,7 +215,7 @@ copy /y $(OutDir)$(TargetName).pdb $(SolutionDir)vc$(PlatformToolsetVersion)\$(P
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PostBuildEvent>
       <Command>if not exist $(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\vs2022_Release mkdir $(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\vs2022_Release
-copy /y $(OutDir)$(TargetName).exe $(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\vs2022_Debug
+copy /y $(OutDir)$(TargetName).exe $(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\vs2022_Release
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
